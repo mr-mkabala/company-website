@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Wiadomość została wysłana - Web Developer & Freelancer | Mateusz Kabała</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Wiadomość została skutecznie przekazana do Mateusza.">
+    <meta name="keywords"
+        content="web development, web developer, projektowanie stron internetowych, projektowanie stron www, wizytówka internetowa, freelance web developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="msg-box">
+        <img src="images/svg/happy-face.svg" alt="Happy face icon for sent message.">
+        <h1>Wiadomość została wysłana!</h1>
+        <h2>Za chwilę powrócisz na stronę główną.</h2>
+        <h2><a class="link-back link-200" href="/">Wróć do strony głównej</a></h2>
+    </div>
+
+    <!-- Scripts section -->
+    <section class="scripts">
+        <script>
+            window.setTimeout(function () {
+                location.href = document.querySelector(".link-back").href;
+            }, 3000);
+        </script>
+    </section>
+
+</body>
+
+</html>

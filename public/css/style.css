@@ -58,6 +58,35 @@ footer p a:hover {
   transition: color 0.5s;
 }
 
+.msg-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.link-200:hover {
+  color: #06D6A0;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.link-500:hover {
+  color: #EF476F;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
 @media only screen and (min-device-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -132,24 +161,24 @@ footer p a:hover {
   text-align: center;
 }
 
-.link-1:hover,
-.link-1:focus {
+.link-1:hover {
   color: #EF476F;
 }
 
-.link-2:hover,
-.link-2:focus {
+.link-2:hover {
   color: #06D6A0;
 }
 
-.link-3:hover,
-.link-3:focus {
+.link-3:hover {
   color: #FFD166;
 }
 
-.link-4:hover,
-.link-4:focus {
+.link-4:hover {
   color: #118AB2;
+}
+
+.nav-link:focus {
+  color: #FCFCFC;
 }
 
 .landing-page {
@@ -656,33 +685,41 @@ footer p a:hover {
   @-webkit-keyframes contact-btn-animate {
     from {
       background-color: #101010;
+      border: 3px solid #FCFCFC;
     }
     to {
       background-color: #EF476F;
+      border: 3px solid #EF476F;
     }
   }
   @keyframes contact-btn-animate {
     from {
       background-color: #101010;
+      border: 3px solid #FCFCFC;
     }
     to {
       background-color: #EF476F;
+      border: 3px solid #EF476F;
     }
   }
   @-webkit-keyframes contact-btn-animate-out {
     from {
       background-color: #EF476F;
+      border: 3px solid #EF476F;
     }
     to {
       background-color: #101010;
+      border: 3px solid #FCFCFC;
     }
   }
   @keyframes contact-btn-animate-out {
     from {
       background-color: #EF476F;
+      border: 3px solid #EF476F;
     }
     to {
       background-color: #101010;
+      border: 3px solid #FCFCFC;
     }
   }
 }
